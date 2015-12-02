@@ -9,11 +9,11 @@ var Article = function(props) {
 
 Article.prototype.toHTML = function() {
   var $art = $('article').first().clone();
-  $art.find('.title').text(this.title);
-  $art.find('.author').text(this.author);
+  $art.find('.title').html(this.title);
+  $art.find('.author').html(this.author);
   $art.find('.body').html(this.body);
-  $art.find('.category').text(this.category);
-  $art.find('.publishedOn').text(this.publishedOn);
-  $art.find('.authorUrl').text(this.authorUrl);
+  $art.find('.category').html(this.category);
+  $art.find('.publishedOn').html(this.publishedOn);
+  $art.find('.authorUrl').html(this.authorUrl);
   $('main').append($art);
 };

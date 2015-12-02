@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>My First Blog</title>
-    <link rel="css/stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
   </head>
     <body>
       <header>
@@ -10,12 +10,13 @@
           A Blog of Articles
         </h1>
         <nav>
-          <ul>
-            <li class="menu">Home</li>
-            <li class="menu">Articles</li>
-            <li class="menu">Twitter</li>
-            <li class="menu">Github</li>
-          </ul>
+          <div>
+            <ul>
+              <li class="menu">Home</li>
+              <li><a href="#tab-about">About</a></li>
+              <li class="menu"><a href="https://github.com/natepecota">Github</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main>
@@ -26,12 +27,13 @@
           <h4 class="category"></h4>
           <h4 class="publishedOn"></h4>
           <h4 class="authorUrl"></h4>
+          <button class="read-on">Read on --></button>
         </article>
       </main>
       <footer>
-
+        Created by Nate Pecota Copyright 2015
       </footer>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/blog.js"></script>
     <script src="scripts/blogArticles.js"></script>

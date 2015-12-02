@@ -1,0 +1,30 @@
+body {
+  font-family: helvetica;
+}
+
+#blogTitle {
+  background-color: grey;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  padding-top: .5em;
+  padding-right: .5em;
+  padding-bottom: .5em;
+}
+
+h4 {
+  background-color: lightgrey;
+}
+
+.menu {
+  background-color: lightgrey;
+  border-bottom: 2% solid white;
+}
+
+footer {
+  background-color: lightgrey;
+  margin-top: 4%;
+}
