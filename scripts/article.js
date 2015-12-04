@@ -17,3 +17,20 @@ Article.prototype.toHTML = function() {
   $art.find('.authorUrl').html(this.authorUrl);
   $('main').append($art);
 };
+
+Article.prototype.createFilters = function() {
+  var $authorMenuItemClone = $('.authorMenuItem').clone();
+  $authorMenuItemClone.removeAttr('class');
+  $authorMenuItemClone.attr('value', this.author);
+  $authorMenuItemClone.text(this.author);
+  if ($('#authorSelect').find('option[value="' + this.author + '"]').length === 0) {
+    $('#authorSelect').append($authorMenuItemClone);
+  }
+  var $catMenuItemClone = $('.catMenuItem').clone();
+  $catMenuItemClone.removeAttr('class');
+  $catMenuItemClone.attr('value', this.category);
+  $catMenuItemClone.text(this.category);
+  if ($('#catSelect').find('option[value="' + this.category + '"]').length === 0) {
+    $('#catSelect').append($catMenuItemClone);
+  }
+};

@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>My First Blog</title>
     <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="os-styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="os-styles/skeleton.css">
   </head>
     <body>
       <header>
-        <h1 id="blogTitle">
-          A Blog of Articles
-        </h1>
         <nav>
-          <div>
+          <div class="nav-tabs">
+            <!--<span class="icon-menu"></span>For Hamburger-->
+            <h1 id="blogTitle">
+              A Blog of Articles
+            </h1>
             <ul>
-              <li class="menu">Home</li>
-              <li><a href="#tab-about">About</a></li>
-              <li class="menu"><a href="https://github.com/natepecota">Github</a></li>
+              <li id="home-tab" class="menu">Home</li>
+              <li id="aboutTab" class="menu"><a href="#tab-about">About Me</a></li>
+              <li id="github-tab" class="menu"><a href="https://github.com/natepecota">Github</a></li>
             </ul>
           </div>
         </nav>
       </header>
+
+        <form id="authorFilter">
+          <select id="authorSelect">
+            <option class="authorMenuItem" value="none">Filter by Author</option>
+          </select>
+        </form>
+
+        <form id="catFilter">
+          <select id="catSelect">
+            <option class="catMenuItem" value="none">Filter by Category</option>
+          </select>
+        </form>
+
       <main>
         <article id="template">
           <h1 class="title"></h1>
@@ -30,10 +47,17 @@
           <button class="read-on">Read on --></button>
         </article>
       </main>
+
+      <section class="aboutMe" value="hidden">
+        <p>I love to sleep...anywhere.</p>
+        <p>I like to eat lots of food.</p>
+        <p>I like to lift heavy things everyday.</p>
+      </section>
+
       <footer>
         Created by Nate Pecota Copyright 2015
       </footer>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/blog.js"></script>
     <script src="scripts/blogArticles.js"></script>

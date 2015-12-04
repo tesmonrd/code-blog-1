@@ -2,9 +2,10 @@ body {
   font-family: helvetica;
 }
 
-#blogTitle {
+nav {
   background-color: grey;
   color: white;
+  padding-left: 1em;
 }
 
 img {
@@ -20,11 +21,35 @@ h4 {
 }
 
 .menu {
-  background-color: lightgrey;
-  border-bottom: 2% solid white;
+  display: inline;
+  color: white;
 }
 
 footer {
   background-color: lightgrey;
   margin-top: 4%;
+}
+
+#authorFilter {
+  max-width: 100%;
+  display: inline;
+}
+
+#catFilter {
+  max-width: 100%;
+  display: inline;
+}
+
+.title {
+  background-color: grey;
+  color: white;
+}
+
+.author {
+  background-color: grey;
+  color: white;
+}
+
+.aboutMe {
+  display: none;
 }

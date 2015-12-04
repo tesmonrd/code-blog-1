@@ -10,3 +10,7 @@ $(function() {
 $(function() {
   blog.revealArticles();
 });
+
+$(function() {
+  blog.filterArticles();
+});
