@@ -5,32 +5,35 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="blogArticles.js" method="post">
+    <form id="newArticle">
       <p>
         Title:
-        <input type="text" name="title" value="">
+        <input type="text" id="title" value="">
       </p>
       <p>
         Category:
-        <input type="text" name="category" value="">
+        <input type="text" id="category" value="">
       </p>
       <p>
         Author:
-        <input type="text" name="author" value="">
+        <input type="text" id="author" value="">
       </p>
       <p>
         Author URL:
-        <input type="text" name="authorUrl" value="">
+        <input type="text" id="authorUrl" value="">
       </p>
       <p>
         Date:
-        <input type="text" name="publishedOn" value="">
+        <input type="text" id="publishedOn" value="">
       </p>
       <p>
         Text here:
       </p>
-      <textarea name="comment" rows="8" cols="40"></textarea>
-      <button type="button" name="submit">Submit</button>
+      <textarea id="body" rows="8" cols="40"></textarea>
+      <input type="submit">
     </form>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="form.js"></script>
 </html>
