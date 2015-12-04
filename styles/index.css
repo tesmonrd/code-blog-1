@@ -14,7 +14,9 @@ nav {
 }
 
 img {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   padding-top: .5em;
   padding-right: .5em;
@@ -60,8 +62,8 @@ footer {
 }
 
 .nav {
-	margin-bottom: 18px;
-	margin-left: 0;
+	margin-bottom: 1.8em;
+	margin-left: 0em;
   list-style: none;
 }
 
@@ -88,28 +90,28 @@ footer {
 }
 
 .nav-tabs > li > a {
-	padding-right: 12px;
-	padding-left: 12px;
-	margin-right: 2px;
-	line-height: 14px;
+	padding-right: 1em;
+	padding-left: 1em;
+	margin-right: .2em;
+	line-height: 1.4em;
 }
 
 .nav-tabs {
-	border-bottom: 1px solid #ddd;
+	border-bottom: .1em solid #ddd;
 }
 
 .nav-tabs > li {
-	margin-bottom: -1px;
+	margin-bottom: -.1em;
 }
 
 .nav-tabs > li > a {
-	padding-top: 8px;
-	padding-bottom: 8px;
-	line-height: 18px;
-	border: 1px solid transparent;
-	-webkit-border-radius: 4px 4px 0 0;
-	-moz-border-radius: 4px 4px 0 0;
-	border-radius: 4px 4px 0 0;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	line-height: 1.8em;
+	border: .1em solid transparent;
+	-webkit-border-radius: .4em .4em 0em 0em;
+	-moz-border-radius: .4em .4em 0em 0em;
+	border-radius: .4em .4em 0em 0em;
 }
 
 .nav-tabs > li > a:hover {
@@ -121,12 +123,12 @@ footer {
 	color: #555555;
 	cursor: default;
 	background-color: #ffffff;
-	border: 1px solid #ddd;
+	border: .1em solid #ddd;
   border-bottom-color: transparent;
 }
 
 li {
-	line-height: 18px;
+	line-height: 1.8em;
 }
 
 .tab-content.active{
