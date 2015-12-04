@@ -52,10 +52,9 @@ blog.filterArticles = function() {
   });
 };
 
-//This does not work at all...why??
-//blog.hideArticles = function() {
-  //$('main').on('click', '#aboutTab', function (event) {
-    //event.preventDefault();
-    //$(this).parent().find('article').hide();
-  //});
-//};
+blog.hideArticles = function() {
+  $('main').on('click', '#aboutTab', function(event) {
+    event.preventDefault();
+    $('article').hide();
+  });
+};

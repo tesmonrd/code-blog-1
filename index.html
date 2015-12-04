@@ -9,50 +9,65 @@
   </head>
     <body>
       <header>
-        <nav>
-          <div class="nav-tabs">
-            <!--<span class="icon-menu"></span>For Hamburger-->
-            <h1 id="blogTitle">
-              A Blog of Articles
-            </h1>
-            <ul>
-              <li id="home-tab" class="menu">Home</li>
-              <li id="aboutTab" class="menu"><a href="#tab-about">About Me</a></li>
-              <li id="github-tab" class="menu"><a href="https://github.com/natepecota">Github</a></li>
-            </ul>
-          </div>
-        </nav>
+        <h1 id="blogTitle">
+          A Blog of Articles
+        </h1>
+        <div class="nav">
+      	  <ul class="nav nav-tabs">
+      			<li class="active">
+      				  <a href="#tab1">Home</a>
+      			</li>
+      			<li>
+      				<a href="#tab2">About</a>
+      			</li>
+      			<li>
+      				<a href="#tab3">Contact</a>
+      			</li>
+            <li>
+              <a href="https://github.com/natepecota">Github</a>
+            </li>
+      		</ul>
+    		</div>
+    		<section id="tab1" class="tab-content active">
+          <form id="authorFilter">
+            <select id="authorSelect">
+              <option class="authorMenuItem" value="none">Filter by Author</option>
+            </select>
+          </form>
+          <form id="catFilter">
+            <select id="catSelect">
+              <option class="catMenuItem" value="none">Filter by Category</option>
+            </select>
+          </form>
+    			<div>
+            <main>
+              <article id="template">
+                <h1 class="title"></h1>
+                <h3 class="author"></h3>
+                <div class="body"></div>
+                <h4 class="category"></h4>
+                <h4 class="publishedOn"></h4>
+                <h4 class="authorUrl"></h4>
+                <button class="read-on">Read on --></button>
+              </article>
+            </main>
+    			</div>
+    		</section>
+    		<section id="tab2" class="tab-content hide">
+    			<div>
+    				<p>
+    				  I love to sleep. I like to eat all the foods. I like to lift heavy things everyday.
+    				</p>
+    			</div>
+    		</section>
+    		<section id="tab3" class="tab-content hide">
+    			<div>
+            nate.pecota@gmail.com
+    			</div>
+    		</section>
       </header>
 
-        <form id="authorFilter">
-          <select id="authorSelect">
-            <option class="authorMenuItem" value="none">Filter by Author</option>
-          </select>
-        </form>
 
-        <form id="catFilter">
-          <select id="catSelect">
-            <option class="catMenuItem" value="none">Filter by Category</option>
-          </select>
-        </form>
-
-      <main>
-        <article id="template">
-          <h1 class="title"></h1>
-          <h3 class="author"></h3>
-          <div class="body"></div>
-          <h4 class="category"></h4>
-          <h4 class="publishedOn"></h4>
-          <h4 class="authorUrl"></h4>
-          <button class="read-on">Read on --></button>
-        </article>
-      </main>
-
-      <section class="aboutMe" value="hidden">
-        <p>I love to sleep...anywhere.</p>
-        <p>I like to eat lots of food.</p>
-        <p>I like to lift heavy things everyday.</p>
-      </section>
 
       <footer>
         Created by Nate Pecota Copyright 2015
