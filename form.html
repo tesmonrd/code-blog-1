@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script id="article-template" type="text/blagh">
+      <article>
+        <h1 class="title">{{title}}</h1>
+        <h5 class="category">{{category}}</h5>
+        <h5><em>Written by: </em><a href="{{authorUrl}}">{{author}}</a><em> on </em>{{publishedOn}}</h5>
+        <div class="body">{{{body}}}</div>
+        <a href="#" class="read-on">Read on -></a> <hr/>
+      </article>
+    </script>
   </head>
   <body>
-    <form id="newArticle">
+    <form id="Article">
       <p>
         Title:
         <input type="text" id="title" value="">
@@ -32,7 +41,11 @@
       <textarea id="body" rows="8" cols="40"></textarea>
       <input type="submit">
     </form>
+    <div id="sampleArticle">
+    <p></p>
+    </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
   <script src="form.js"></script>
