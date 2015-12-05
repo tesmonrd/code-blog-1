@@ -32,5 +32,6 @@ $(document).ready(function() {
   $('#Article').on('submit', function(event){
     event.preventDefault();
     buildComment();
+    $('#copy-code').html(articleFromPage.toString);
   });
 });
